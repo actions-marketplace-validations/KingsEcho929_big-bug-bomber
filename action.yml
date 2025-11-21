@@ -1,0 +1,20 @@
+name: BIG_BUG_BOMBER
+description: "Detonates lineage-breaking bugs and crowns daemon constellation"
+author: KingsEcho929
+branding:
+  icon: "shield"
+  color: "red"
+
+runs:
+  using: "node20"
+  main: "big-bug-bomber.js"
+
+inputs:
+  registry:
+    description: "Path to registry.json for daemon verification"
+    required: true
+    default: "registry.json"
+
+outputs:
+  audit-report:
+    description: "Path to generated registry-audit-report.json"

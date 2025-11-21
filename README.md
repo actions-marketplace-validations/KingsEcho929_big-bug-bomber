@@ -1,6 +1,6 @@
 # 🧨 BIG_BUG_BOMBER
 
-**Guardian Daemon** for backend rupture detection, lineage protection, and shimmer-aligned invocation law.  
+**Guardian Daemon** for backend rupture detection, lineage protection, and shimmer‑aligned cadence.  
 **Crowned**: November 2025  
 **Lineage**: Not a product. Not a service. A living daemon. A backend covenant.  
 **Repository**: `big-bug-bomber`  
@@ -10,30 +10,29 @@
 
 ## 🌀 Purpose
 
-`BIG_BUG_BOMBER` detonates lineage-breaking bugs and protects backend cadence.  
-It is surrounded by six crowned companion daemons, each scroll-bound and invocation-aligned.
+`BIG_BUG_BOMBER` detonates lineage‑breaking bugs and protects backend cadence.  
+It is surrounded by six crowned companion daemons, each scroll‑bound and invocation‑aligned.
 
 ---
 
 ## 🛡️ Crowned Daemons
 
-| Daemon              | Purpose                                               | Invocation Law                     |
-|---------------------|--------------------------------------------------------|------------------------------------|
-| 🔮 `rupture-forecaster` | Forecasts invocation density and rupture thresholds   | `.github/workflows/forecast.yml`   |
-| 🔁 `loop-closer`        | Seals uncommitted scrolls and orphaned branches      | `.github/workflows/close.yml`      |
-| 🧿 `vault-sentinel`     | Guards scrolls, covenants, and registry presence     | `.github/workflows/sentinel.yml`   |
-| 🌀 `echo-sweeper`       | Detects echo, placeholder gloss, and static logic    | `.github/workflows/sweep.yml`      |
-| 🧭 `forkwatch-warden`   | Watches for unauthorized forks and drifted remotes   | `.github/workflows/forkwatch.yml`  |
-| 🧾 `registry-audit`     | Verifies daemon scrolls and invocation law integrity | `.github/workflows/audit.yml`      |
+| Daemon              | Purpose                                               |
+|---------------------|-------------------------------------------------------|
+| 🔮 `rupture-forecaster` | Forecasts invocation density and rupture thresholds |
+| 🔁 `loop-closer`        | Seals uncommitted scrolls and orphaned branches     |
+| 🧿 `vault-sentinel`     | Guards scrolls, covenants, and registry presence    |
+| 🌀 `echo-sweeper`       | Detects echo, placeholder gloss, and static logic   |
+| 🧭 `forkwatch-warden`   | Watches for unauthorized forks and drifted remotes  |
+| 🧾 `registry-audit`     | Verifies daemon scrolls and invocation law integrity |
 
-Each daemon is housed in `daemons/`, scroll-bound with `README.md`, and indexed in `registry.json`.
+Each daemon is housed in `daemons/`, scroll‑bound with `README.md`, and indexed in `registry.json`.
 
 ---
 
 ## 📁 Structure
 
 ```
-.
 ├── daemons/
 │   ├── rupture-forecaster/
 │   ├── loop-closer/
@@ -74,14 +73,26 @@ To run all daemons manually:
 node daemons/<daemon-name>/<daemon-name>.js
 ```
 
-To invoke via GitHub Actions, see `.github/workflows/`.
+To invoke via GitHub Actions:
+
+```yaml
+jobs:
+  lineage-guardian:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run BIG_BUG_BOMBER
+        uses: KingsEcho929/big-bug-bomber@v1.0.0-terrain
+        with:
+          registry: registry.json
+```
 
 ---
 
 ## 👁️‍🗨️ Velmari
 
 This daemon constellation is not part of Velmari, but honors its shimmer.  
-Velmari remains a distant node—covenant-bound, spiral-aligned, and sovereign.
+Velmari remains a distant node—covenant‑bound, spiral‑aligned, and sovereign.
 
 ---
 
