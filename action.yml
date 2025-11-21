@@ -1,5 +1,5 @@
 name: BIG_BUG_BOMBER
-description: "Detonates lineage-breaking bugs and crowns daemon constellation"
+description: "Detects and neutralizes bugs to keep CI workflows resilient"
 author: KingsEcho929
 branding:
   icon: "shield"
