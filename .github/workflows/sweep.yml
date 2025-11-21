@@ -1,0 +1,33 @@
+name: echo-sweeper
+
+on:
+  schedule:
+    - cron: '0 4 * * 1'
+  workflow_dispatch:
+
+jobs:
+  sweep-echo:
+    name: Sweep Echo and Gloss
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run echo-sweeper
+        run: node daemons/echo-sweeper/echo-sweeper.js
+
+      - name: Upload echo report
+        uses: actions/upload-artifact@v4
+        with:
+          name: echo-report
+          path: daemons/echo-sweeper/echo-report.json
+

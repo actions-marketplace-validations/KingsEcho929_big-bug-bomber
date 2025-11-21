@@ -1,1 +1,32 @@
-[]
+{
+  "rupture-forecaster": {
+    "path": "daemons/rupture-forecaster/rupture-forecaster.js",
+    "scroll": "daemons/rupture-forecaster/README.md",
+    "invocation": ".github/workflows/forecast.yml"
+  },
+  "loop-closer": {
+    "path": "daemons/loop-closer/loop-closer.js",
+    "scroll": "daemons/loop-closer/README.md",
+    "invocation": ".github/workflows/close.yml"
+  },
+  "vault-sentinel": {
+    "path": "daemons/vault-sentinel/vault-sentinel.js",
+    "scroll": "daemons/vault-sentinel/README.md",
+    "invocation": ".github/workflows/sentinel.yml"
+  },
+  "echo-sweeper": {
+    "path": "daemons/echo-sweeper/echo-sweeper.js",
+    "scroll": "daemons/echo-sweeper/README.md",
+    "invocation": ".github/workflows/sweep.yml"
+  },
+  "forkwatch-warden": {
+    "path": "daemons/forkwatch-warden/forkwatch-warden.js",
+    "scroll": "daemons/forkwatch-warden/README.md",
+    "invocation": ".github/workflows/forkwatch.yml"
+  },
+  "registry-audit": {
+    "path": "daemons/registry-audit/registry-audit.js",
+    "scroll": "daemons/registry-audit/README.md",
+    "invocation": ".github/workflows/audit.yml"
+  }
+}
